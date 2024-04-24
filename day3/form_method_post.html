@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form method</title>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>개인정보 입력</legend>
+                이름 <input type="text" name="name"><br>
+                나이 <input type="text" name="age" pattern="[1-9]{1}[0-9]{1}"><br>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+<!--
+    action 속성에는 폼 데이터가 전달된 url을 명시한다
+    action="http://210.119.14.85"
+    method 속성에는 전송방식을 나타내준다
+    post방식은 몸체에 폼데이터를 실어보낸다(어렵지만 보안에 좋다)
+-->
