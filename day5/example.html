@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>게시판 입력 양식</title>
+        <style>
+            #textarea{
+                width: 400px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>글 작성하기</h1>
+        <form action="#" method="get">
+            <div><b>작성자</b> <input type="text" name="writer"></div><br>
+            <div><b>아이디</b> <input type="text" name="id"></div><br>
+            <div><b>이메일</b> <input type="text" name="emailhead">@<input type="text" name="emailtail"></div><br>
+            <div><b>휴대폰</b> 
+                <select>
+                    <option>010</option>
+                    <option>011</option>
+                    <option>012</option>
+                </select> - <input type="text" name="phonehead" pattern="[0-9]{4}"> - <input type="text" name="phonetail" pattern="[0-9]{4}"></div><br>
+            <div><b>글제목</b> <input type="text" name="name"></div><br>     
+            <div> <b>내용</b> <textarea id="textarea" name="memo"></textarea></div><br>
+            <div><input type="submit"></div>
+        </form>
+    </body>
+</html>

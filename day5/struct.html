@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>struct</title>
+        <style>
+            li{
+                list-style: none;
+                float: left;
+                padding: 15px;
+            }
+            li:nth-child(2n){background-color: cadetblue;}
+            li:nth-child(2n-1){background-color: aqua;
+            }
+            li:first-child{border-radius: 10px 0 0 10px;}
+            li:last-child{border-radius: 0 10px 10px 0;}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>첫 번째</li>
+            <li>두 번째</li>
+            <li>세 번째</li>
+            <li>네 번째</li>
+            <li>다섯 번째</li>
+            <li>여섯 번째</li>
+            <li>일곱 번째</li>
+            <li>여덟 번째</li>
+        </ul>
+    </body>
+</html>
+
+<!--
+    구조 선택자 : 특정 위치에 있는 태그를 선택할 때 사용
+    :nth-child(수열) 형제관계에서 수열에 해당되는 태그 선택
+    :first-child
+    :last-child
+    list-style -> 블릿 마커 제어
+    border-radius -> 테두리(좌상, 우상, 우하, 좌하 순)
+-->
