@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>pixel size</title>
+        <style>
+            p:nth-child(1)
+            p:nth-child(2){font-size: 16px;}
+            p:nth-child(3){font-size: 24px;}
+            p:nth-child(4){font-size: 32px;}
+        </style>
+    </head>
+    <body>
+        <!--인라인 속성-->
+        <p style="color: green;">뜨거운 여름밤은 가고 남은건 볼품없지만</p>
+        <p>또 다시 찾아오는 누군갈 위해 남겨두겠소</p>
+        <p>우리는 아름다웠기에 이토록 가슴 아픈걸</p>
+        <p>이제야 보내주오 그대도 내 행복 빌어주시오</p>
+    </body>
+</html>
+<!--
+    절대길이 단위 1px = 0.265mm
+    모니터에 따라 상대적인 크기를 가짐
+-->
+<!--
+    CSS 적용 우선 순위
+    1. 속성값 뒤에 !important
+     (important-black {color: red !important})
+    2. style을 직접 지정한 속성(인라인 속성)
+    3. #id로 지정한 속성
+    4. 태그로 지정한 속성
+    5. 상위 객체에 의해 상속된 속성
+-->
