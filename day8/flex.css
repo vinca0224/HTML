@@ -1,0 +1,44 @@
+.container{
+    background: salmon;
+    height: 100vw;
+
+    /* /* 컨테이너 박스를 flex box 만들기 
+    첫번째 display 속성에 flex 속성값을 적용
+    두번째 flex-direction 속성에 기준축을 적용한다*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: flex-start;
+} 
+.item{
+    height: 100px;
+    width: 100px;
+    border: solid;
+    border-width: 2px;
+}
+.item1{
+    background: wheat;
+}
+.item2{
+    background: greenyellow;
+}
+.item3{
+    background: cornflowerblue;
+}
+.item4{
+    background: teal;
+}
+.item5{
+    background: violet;
+}
+
+/* vh : view height : 화면에 보이는 공간을 기준 */
+/* flex-direction : 기준축을 정의
+   - row, row-reverse, column, column-reverse 
+   justify-content : 중심축에서 아이템의 배치를 담당
+   - flex-start, flex-end, center, space-around
+   align-items : 반대축에서 아이템을 배치하는 속성
+   */
