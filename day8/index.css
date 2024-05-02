@@ -4,10 +4,10 @@ body{
     display: grid;
     width: 100vw;
     height: 100vh;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100px auto 50px;
     grid-template-areas: 
         'a a'
-        'b c'
-        'b c'
         'b c'
         'd d';
 }
@@ -16,17 +16,20 @@ body{
     color: white;
     grid-area: a;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .main{
     grid-area: b;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .side{
     background-color: gold;
     grid-area: c;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .footer{
@@ -34,5 +37,6 @@ body{
     color: white;
     grid-area: d;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
