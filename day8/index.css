@@ -1,0 +1,38 @@
+body{
+    font-size: 2rem;
+    font-weight: bold;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+        'a a'
+        'b c'
+        'b c'
+        'b c'
+        'd d';
+}
+.header{
+    background-color: black;
+    color: white;
+    grid-area: a;
+    display: flex;
+    align-items: center;
+}
+.main{
+    grid-area: b;
+    display: flex;
+    align-items: center;
+}
+.side{
+    background-color: gold;
+    grid-area: c;
+    display: flex;
+    align-items: center;
+}
+.footer{
+    background-color: black;
+    color: white;
+    grid-area: d;
+    display: flex;
+    align-items: center;
+}

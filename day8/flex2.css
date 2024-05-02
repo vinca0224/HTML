@@ -1,0 +1,27 @@
+.container{
+    padding-top: 100px;
+    background: gainsboro;
+    height: 100vh;
+
+   display: flex;
+}
+.item{
+    width: 80px;
+    height: 80px
+}
+.item1{
+    background-color: lightpink;
+    flex-grow: 1;   /*비례하여 늘어남*/
+    flex-shrink: 1; /*비례하여 줄어듬*/
+    flex-basis: 60%;
+    /* flex : 2 2 auto -grow shrink basis */
+    align-self: center; /*아이템을 개별적으로 적용*/
+}
+.item2{
+    background-color: lightgreen;
+    flex-shrink: 1;
+}
+.item3{
+    background-color: lightskyblue;
+    flex-grow: 3;
+}
