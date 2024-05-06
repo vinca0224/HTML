@@ -1,4 +1,110 @@
-.container{
+header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header #menu{
+    padding-left: 100px;
+    width: 800px;
+    align-content: space-between;
+   
+}
+header li{
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}
+#section1{
+    width: 100%;
+    height:500px;
+    display: flex;
+    background-image: url(./img/main_1.jpg);
+    background-size: cover;
+}
+nav{
+    margin-top: 100px;
+    text-align: center;
+}
+#section2{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    margin: 0 10% 0 10%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    gap: 1rem 1rem;
+
+    grid-template-areas: 
+        'a a b'
+        'c d d'
+}
+#img1{
+    grid-area: a;
+    background-image: url(./img/se_2_con_1.jpg);
+    background-size: cover;
+}
+#img2{
+    grid-area: b;
+    background-image: url(./img/se_2_con_2.jpg);
+    background-size: cover;
+}
+#img3{
+    grid-area: c;
+    background-image: url(./img/se_2_con_3.jpg);
+    background-size: cover;
+}
+#img4{
+    grid-area: d;
+    background-image: url(./img/se_2_con_4.jpg);
+    background-size: cover;
+}
+#section3{
+    width: 100%;
+    height:500px;
+    display: flex;
+    background-image: url(./img/se_4_main.jpg);
+    background-size: cover;
+}
+#section4{
+    display: grid;
+    margin: 0 20% 0 20%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 1rem 1rem;
+
+    grid-template-areas: 
+        'd e f'
+}
+#img5{
+    grid-area: d;
+    background-image: url(./img/se_5_con_1.jpg);
+    background-size: cover;
+}
+#img6{
+    grid-area: e;
+    background-image: url(./img/se_5_con_2.jpg);
+    background-size: cover;
+}
+#img7{
+    grid-area: f;
+    background-image: url(./img/se_5_con_3.jpg);
+    background-size: cover;
+}
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+}
+#black{
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    transform: skewx(-45deg) rotateZ(-15deg);
 }
