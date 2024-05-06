@@ -1,0 +1,23 @@
+#container{
+    width: 1000px;
+    height: 100px;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;  
+}
+.menu{
+    width: 250px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex
+}
+.submenu{
+    width: 250px;
+    height: 150px;
+    background-color: aquamarine;
+    /* display: none; */
+    
+}
