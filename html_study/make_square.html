@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Make Square</title>
+        <style>
+            #box{
+                width: 1000px;
+                height: 1000px;
+                margin: 0 auto;
+                margin-top: 300px;
+                position: relative;
+                display: flex;
+            }
+            .line{
+                width: 0%;
+                height: 0%;
+                position: absolute;
+                border: 32px solid lightskyblue;
+                visibility: hidden;
+                box-sizing: border-box;
+            }
+            .two{
+                left: 100%;
+            }
+            .three{
+                right: 0%;
+                bottom: 0%;
+            }
+            .four{
+                bottom: 0%;
+            }
+            #box:hover .one{
+                visibility: visible;
+                width: 100%;
+                transition: 0.5s;
+            }
+            #box:hover .two{
+                visibility: visible;
+                height: 100%;
+                transition: 0.5s;
+                transition-delay: 0.5s;
+            }
+            #box:hover .three{
+                visibility: visible;
+                width: 100%;
+                transition: 0.5s;
+                transition-delay: 1s;
+            }
+            #box:hover .four{
+                visibility: visible;
+                height: 100%;
+                transition: 0.5s;
+                transition-delay: 1.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div class="line one"></div>
+            <div class="line two"></div>
+            <div class="line three"></div>
+            <div class="line four"></div>
+        </div>
+    </body>
+</html>
