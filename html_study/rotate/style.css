@@ -1,0 +1,23 @@
+#out_box{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-image: url(./dog.jpg);
+    background-repeat: no-repeat;
+    background-size: 800px 800px;
+}
+#test_box{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    top: 350px;
+    position: relative;
+    background-color: lightskyblue;
+    visibility: hidden;
+}
+#out_box:hover #test_box{
+    transition: 2s;
+    visibility: visible;
+    transform: rotateZ(360deg) scale(8);
+}
