@@ -1,7 +1,7 @@
 #container{
     width: 1000px;
     height: 100px;
-    background-color: lightcoral;
+    background-color: lightyellow;
     display: flex;
     position: relative;
     margin: 0 auto; 
