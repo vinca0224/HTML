@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dice</title>
+        <style>
+            #container{
+                width: 100px;
+                height: 100px;
+                margin: 100px auto;
+                transform-style: preserve-3d;
+                perspective: 400px;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                line-height: 100px;
+                opacity: 50%;
+                border: 1px solid black;
+            }
+            .axisX{
+                background-color: lightcoral;
+                transform: rotate3d(100,0,0, 90deg);
+            }
+            .axisY{
+                background-color: lightgreen;
+                transform: rotate3d(0,100,0, 90deg);
+            }
+            .axisZ{
+                background-color: lightblue;
+                transform: rotate3d(0,0,100, 90deg);
+            }
+            #container:hover{
+                transition-duration: 2s;
+                transform-origin: 100% 100%;
+                transform: rotate3d(1,0,0, 180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="box axisX" style="left: 0%; top: 0%;">1</div>
+            <!-- <div class="box axisY" style="left: -50%; top: 50%;">2</div> -->
+            <div class="box axisZ" style="left: 0%; top: 50%; transform: translateZ(-50px);">3</div>
+            <div class="box axisX" style="left: 0%; top: 100%;">4</div>
+            <!-- <div class="box axisY" style="left: 50%; top: 50%;">5</div> -->
+            <div class="box axisZ" style="left: 0%; top: 50%; transform: translateZ(50px);">6</div>
+        </div>
+    </body>
+</html>

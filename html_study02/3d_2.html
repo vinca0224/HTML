@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dice</title>
+        <style>
+            /* 기본 컨테이너 틀 */
+            #container{
+                width: 100px;
+                height: 100px;
+                margin: 100px auto;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+                border: 1px solid black;
+            }
+            /* 각 면을 구성하는 요소들의 공통 특성 */
+            .box{
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                /* 자손요소들을 자유롭게 배치하기위해 absolute로 설정 */
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                line-height: 100px;
+                opacity: 50%;
+                border: 1px solid black;
+                backface-visibility: hidden;
+            }
+            /* 각 면의 개별적인 특성 
+                각 면마다 회전을 다르게한 이유는 앞 뒤를 동일한 방향으로 주면 안되기때문*/
+            /* one는 왼쪽 면을 구성함 */
+            #one{
+                left: -50%;
+                top: 0%;
+                background-color: lightcoral;
+                /* y축으로 -90도만큼 회전*/
+                transform: rotate3d(0,1,0, -90deg);
+            }
+            /* two는 오른쪽 면을 구성함 */
+            #two{
+                left: 50%;
+                top: 0%;
+                background-color: lightcoral;
+                /* y축으로 90도만큼 회전*/
+                transform: rotate3d(0,1,0, 90deg);
+            }
+            /* three는 위쪽 면을 구성함 */
+            #three{
+                left: 0%;
+                top: -50%;
+                background-color: lightgreen;
+                 /* x축으로 90도만큼 회전*/
+                transform: rotate3d(1,0,0, 90deg);
+            }
+            /* four는 아래쪽 면을 구성함 */
+            #four{
+                left: 0%;
+                top: 50%;
+                background-color: lightgreen;
+                /* x축으로 -90도만큼 회전*/
+                transform: rotate3d(1,0,0, -90deg);
+            }
+            /* five는 앞쪽 면을 구성함 */
+            #five{
+                left: 0%;
+                top: 0%;
+                background-color: lightblue;
+                /* 회전은 하지않고, z축선상에서 50px만큼 앞으로 이동 */
+                transform: translateZ(50px) rotate3d(0,0,0, 0deg);
+            }
+            /* six는 뒤쪽 면을 구성함 */
+            #six{
+                left: 0%;
+                top: 0%;
+                background-color: lightblue;
+                /* z축선상에서 50px만큼 뒤로 이동 */
+                /* y축으로 180도 회전시켜 앞면이 후방을 바라보도록 설정 */
+                transform: translateZ(-50px) rotate3d(0,1,0, 180deg);
+            }
+            /* 호버 시  회전할 수 있도록 설정 */
+            #container:hover{
+                /* transition 시간 */
+                transition-duration: 2s;
+                /* 회전하는 축, 각도(x축, y축, z축, 각도) */
+                transform: rotate3d(1,1,0, -180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="box" id="one">1</div>
+            <div class="box" id="two">2</div>
+            <div class="box" id="three">3</div>
+            <div class="box" id="four">4</div>
+            <div class="box" id="five">5</div>
+            <div class="box" id="six">6</div>
+        </div>
+    </body>
+</html>
