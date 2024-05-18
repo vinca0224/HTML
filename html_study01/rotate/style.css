@@ -1,12 +1,15 @@
+/* 사진을 넣을 박스로 out_box 설정*/
 #out_box{
     width: 800px;
     height: 800px;
     margin: 0 auto;
     margin-top: 100px;
+    /* 사진은 설정 */
     background-image: url(./dog.jpg);
     background-repeat: no-repeat;
     background-size: 800px 800px;
 }
+/* 사진 호버링 시 나타나는 박스로 test_box 설정 */
 #test_box{
     width: 100px;
     height: 100px;
@@ -14,10 +17,16 @@
     top: 350px;
     position: relative;
     background-color: lightskyblue;
+    /* 마우스 올리기 전까지는 안보이게 설정 */
     visibility: hidden;
 }
+/* 호버링시 test_box의 작동 */
 #out_box:hover #test_box{
+    /* 동작의 빠르기 */
     transition: 2s;
+    /* 호버링시 보임 */
     visibility: visible;
+    /* 360도 돌면서 기존의 크기에서 8배 커짐 */
+    /* 8배는 outbox와 testbox의 크기를 고려하여 설정 */
     transform: rotateZ(360deg) scale(8);
 }

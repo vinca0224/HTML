@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>moving box</title>
+        <style>
+            #box{
+                width: 100px;
+                height: 100px;
+                background-color: lightblue;
+
+                animation-name: move;
+                animation-duration: 2.5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease;
+                animation-direction: alternate;
+            }
+            @keyframes move{
+                from{
+                    transform: translate(0,0);
+                }
+                25%{
+                    transform: translate(100px, 100px);
+                    
+                }
+                50%{
+                    transform: translate(200px, 0);
+                }
+                75%{
+                    transform: translate(300px, 100px);
+                }
+                to{
+                    transform: translate(400px, 0);
+                    border-radius: 50%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box"></div>
+    </body>
+</html>

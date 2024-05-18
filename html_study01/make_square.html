@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Make Square</title>
         <style>
+            /* 기본 틀인 box의 스타일 설정*/
             #box{
                 width: 1000px;
                 height: 1000px;
@@ -13,24 +14,35 @@
                 position: relative;
                 display: flex;
             }
+            /* 선들의 공통된 특성을 주기위한 스타일 설정 */
             .line{
                 width: 0%;
                 height: 0%;
+                /* absolute를 주어 부모요소를 기준으로 배치할 수 있게 지정 */
                 position: absolute;
+                /* 선의 굵기와 색상 등 */
                 border: 32px solid lightskyblue;
+                /* 평소에는 안보이도록 설정 */
                 visibility: hidden;
+                /* 테두리의 굵기를 박스 사이즈 내에서 처리하기위해 설정 */
+                /* content-box를 사용하면 테두리 굵기까지 더해짐 */
                 box-sizing: border-box;
             }
             .two{
+                /* 부모로부터 왼쪽으로 100% 떨어지게 설정 */
                 left: 100%;
             }
             .three{
+                /* 부모로부터 왼쪽으로 100%, 아래로 0% 떨어지게 설정 */
                 right: 0%;
                 bottom: 0%;
             }
             .four{
+                /* 부모로부터 아래로 0% 떨어지게 설정 */
                 bottom: 0%;
             }
+            /* 호버링 시 작동하는 기전 */
+            /* 공통적으로 너비나 높이를 100%로 늘려서 커지게 보이도록 설정 */
             #box:hover .one{
                 visibility: visible;
                 width: 100%;
@@ -58,6 +70,7 @@
     </head>
     <body>
         <div id="box">
+            <!-- 공통특성인 line 클래스와 개별특성으로 one,two,three, four 부여 -->
             <div class="line one"></div>
             <div class="line two"></div>
             <div class="line three"></div>
