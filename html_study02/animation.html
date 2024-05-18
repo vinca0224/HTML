@@ -5,33 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>moving box</title>
         <style>
+            /* 움직이는 박스 설정 */
             #box{
                 width: 100px;
                 height: 100px;
                 background-color: lightblue;
-
+                /* 애니메이션 이름 설정 */
                 animation-name: move;
                 animation-duration: 2.5s;
+                /* 애니매이션 반복 횟수 */
                 animation-iteration-count: infinite;
+                /* 애니매이션 시간별 경향 */
                 animation-timing-function: ease;
+                /* 애니메이션이 시작 -> 끝 도달시 다시 시작으로 이동 */
                 animation-direction: alternate;
             }
+            /* 총 5개의 지점 */
             @keyframes move{
+                /* 시작점(0,0) */
                 from{
                     transform: translate(0,0);
                 }
+                /* 아래(100px, 100px)로 내려감 */
                 25%{
                     transform: translate(100px, 100px);
                     
                 }
+                /* 위(200px, 0)로 올라감 */
                 50%{
                     transform: translate(200px, 0);
                 }
+                /* 한번더 아래(300px, 100px)로 내려감 */
                 75%{
                     transform: translate(300px, 100px);
                 }
+                /* 끝점(400px, 0) */
                 to{
                     transform: translate(400px, 0);
+                    /* 진행되면서 점차 원으로 변경, 끝->시작 갈 때는 다시 네모로 */
                     border-radius: 50%;
                 }
             }
