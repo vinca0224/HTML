@@ -1,0 +1,20 @@
+header{
+    width: 100vw;
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    width: 160px;
+    margin-left: 8vw;
+}
+#menu li{
+    display: inline-block;
+    margin-left: 2vw;
+    font-size: 15px;
+}
+#logo2{
+    width: 100px;
+    height: 39px;
+    margin-left: 3vw;
+}
