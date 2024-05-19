@@ -1,85 +1,115 @@
+/* a 태그 밑줄제거 */
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* header */
 header{
-    width: 100vw;
-    margin-top: 3vh;
     display: flex;
+    margin: 6vh 0 3vh 0;
+    justify-content: center;
     align-items: center;
-    margin: 0 10vw 0 10vw;
 }
-#logo{
+.logo{
     width: 160px;
+    height: 40px;
+    align-self: stretch;
     left: 0;
 }
-header li{
+header > .logo:last-child{
+    margin-left: 1vw;
+}
+#menu{
+    padding: 0;
+    font-size: 14px;
+}
+#menu li{
     display: inline-block;
-    margin-left: 3vw;
-    font-size: 15px;
+    margin-left: 2vw;
 }
-#logo2{
-    width: 100px;
-    height: 39px;
-    margin-left: 3vw;
+#menu > li:nth-child(n+6){
+    margin-left: 1vw;
 }
-/* article1 */
+
+/* section1 */
 #art1{
     width: 100vw;
-    height: 600px;
-    background-image: url(../toyota/img/backgroundimage.png);
+    height: 0;
+    padding-top : calc(400 / 900 * 100%);
+    background-image: url(../toyota/img/art1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-#art15{
-    width: 100vw;
-    height: 600px;
-    background-image: url(../toyota/img/backgroundimage2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* article2 */
-#section1{
+#art2{
     display: grid;
-    align-content: center;
-    width: 80vw;
-    height: 1000px;
-    margin: auto 10vw;
-    grid-template-areas: 
-    "a b e"
-    "a c f"
-    "a d g";
-    gap: 10px;
+    width: 100vw;
+    height: 900px;
+    /* padding-top : calc(400 / 900 * 100%); */
+    background-color: rgb(28, 28, 28);
+    justify-items: center;
+    align-items: center;
+    grid-column: 1fr 1fr 1fr;
 }
-#a{
-    grid-area: a;
+
+/* section2 */
+#sc2{
+    display: grid;
+    margin: 5vh 10vw 0 10vw;
+    width: 1200px;
+    grid-template-columns: 600px 300px 100px;
+    grid-template-rows: 100px 200px 200px 200px 100px;
+    gap: 10px 25px;
+    justify-content: center;
+}
+#img1{
     width: 100%;
+    height: 100%;
+    grid-row: span 3;
+    background-image: url(../toyota/img/toyota-home-now-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#b{
-    width: 70%;
-    grid-area: b;
+#img2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../toyota/img/toyota-home-now-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#c{
-    width: 70%;
-    grid-area: c;
+#img3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../toyota/img/toyota-home-now-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#d{
-    width: 70%;
-    grid-area: d;
+#img4{
+    width: 100%;
+    height: 100%;
+    background-image: url(../toyota/img/toyota-home-now-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-/* article3 */
-#art3{
+
+/* section3 */
+#sc3{
     width: 100vw;
     height: 600px;
     background-image: url(../toyota/img/article3.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* article4 */
-#art4{
+
+/* section4 */
+#sc4{
     width: 100vw;
     height: 600px;
     background-image: url(../toyota/img/car.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /* footer */
 footer{
     width: 100vw;
@@ -110,4 +140,7 @@ footer li{
     grid-area: "c";
     display: inline-block;
     margin-right: 3vw;
+}
+footer a{
+    color: white;
 }
