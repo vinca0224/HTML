@@ -1,8 +1,9 @@
 header{
     width: 100vw;
-    margin-top: 8vh;
+    margin-top: 3vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #logo{
     width: 160px;
@@ -17,4 +18,35 @@ header{
     width: 100px;
     height: 39px;
     margin-left: 3vw;
+}
+#section2{
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "pic1 pic1  pic2"
+    "pic1 pic1  pic3"
+    "pic1 pic1  pic4"
+    ;
+    gap: 50px;
+    justify-content: center;
+}
+#secHead{
+    grid-area: header;
+}
+#pic1{
+    width: 800px;
+    grid-area: pic1;
+}
+#pic2{
+    width: 500px;
+    grid-area: pic2;
+}
+#pic3{
+    width: 500px;
+    grid-area: pic3;
+}
+#pic4{
+    width: 500px;
+    grid-area: pic4;
 }
