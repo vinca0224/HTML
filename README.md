@@ -53,3 +53,57 @@
 
 ## 3일차
 - Fom 태그
+    - method
+        - get: 주소 url의 끝에 폼데이터를 실어 보낸다(간단하지만 보안에 취약)
+        - post: 몸체에 폼데이터를 실어보낸다(어렵지만 보안에 좋다)
+    - input
+    - label
+    - select
+    ```html
+        <form>
+        <label for="name">user</label>
+        <input type="text" id="name">
+        <label for="tel">tel</label>
+        <input type="tel" id="tel" placeholder="전화번호를 입력하세요">
+        <hr>
+        <input type="email"><br>
+        <input type="color"><br>
+        <input type="date"><br>
+        <input type="search">
+    </form>
+    ```
+
+## 4일차
+- css 기초
+    - css 적용 우선순위
+        1. 속성값 뒤에 !important
+        2. style을 직접 지정한 속성(인라인 속성)
+        3. #id로 지정한 속성
+        4. 태그로 지정한 속성
+        5. 상위 객체에 의해 상속된 속성
+
+- 태그 선택자
+    - *(전체 선택자)
+    - #(id): 중복 불가
+    - .(class): 중복 가능
+
+- 시멘틱 태그
+
+- 블록요소, 인라인 요소
+    1. 블록요소 태그 
+        - html, body, div, p, ul, ol, li, dl, dt, dd ...
+        - 기본 가로 공간의 크기가 부모태그와 동일하게 인식
+        - 연속해서 작성하면 세로 배열
+        - 공간값이 적용됨(w,h)
+    2. 인라인 요소 태그
+        - a, span, strong, i, em ...
+        - 기본 가로 공간의 크기가 안쪽에 포함된 내용만큼만 인식(컨텐츠)
+        - 연속해서 작성하면 가로 배열
+    3. 인라인 블록 요소 태그
+        - img, input, button ...
+        - 기본 가로 공간의 크기가 안쪽에 포함된 내용만큼만 인식
+        - 연속해서 작성하면 가로 배열
+        - 공간값이 적용됨
+
+## 5일차
+- css 심화
