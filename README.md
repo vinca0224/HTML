@@ -143,3 +143,4 @@
 
 ## 자습 예제
 
+[슬라이드 바]<img src="https://github.com/vinca0224/HTML/blob/main/output/gif01.gif" width="730">
