@@ -106,4 +106,40 @@
         - 공간값이 적용됨
 
 ## 5일차
-- css 심화
+- 반응 선택자
+    - 사용자의 반응으로 hover와 active 상태가 만들어 진다.
+    마우스 커서 올리기 - hover, 클릭 - active 적용
+
+- 속성 선택자 : 선택자[속성=값]
+
+- 상태 선택자 : 입력양식의 상태를 선택
+    - :checked - 체크상태의  input 태그 선택
+    :focus - 포커스를 맞춘 input
+    :enabled - 사용가능한 input
+    :disabled - 사용 불가능한 input
+
+- 구조 선택자 : 특정 위치에 있는 태그를 선택할 때 사용
+
+## 6일차
+- flex
+    - vh : view height : 화면에 보이는 공간을 기준 */
+    - flex-direction : 기준축을 정의
+    - row, row-reverse, column, column-reverse 
+    - justify-content : 중심축에서 아이템의 배치를 담당
+    - flex-start, flex-end, center, space-around
+    - align-items : 반대축에서 아이템을 배치하는 속성
+
+- grid
+    -  display : grid를 사용하면 그리드 박스를 사용하는데,
+    부모컨테이너를 grid 지정하면 자식은 grid cell이 된다
+    - grid 속성 : grid-template-columns, grid-template-row, grid-template-areas
+    - grid-template-columns : 100px 100px 100px -> 100px 3개 만듬
+    - grid cell 속성 : grid-column-start, grid-column-end, grid-row-start, grid-row-end, 
+    - repeat 키워드로 반복횟수를 설정
+    - grid-template-columns:repeat(5, 20%)
+    - grid-template-columns:repeat(5, 1fr)
+    - grid-template-columns:repeat(5, 100px)
+    - grid-auto-rows:minmax(150px, autp) -> 각 컬럼의 아이템의 크기가 다른 경우 최소높이는 150px, 너비 자동으로 늘림
+
+## 자습 예제
+
