@@ -143,4 +143,27 @@
 
 ## 자습 예제
 
-[슬라이드 바]<img src="https://github.com/vinca0224/HTML/blob/main/output/gif01.gif" width="730">
+- 슬라이드 바 만들기
+
+    <img src="https://github.com/vinca0224/HTML/blob/main/output/gif01.gif" width="730">
+
+- 회전하는 사각형 만들기
+
+    <img src="https://github.com/vinca0224/HTML/blob/main/output/gif02.gif" width="730">
+
+- 사각형 애니메이션 만들기
+
+    <img src="https://github.com/vinca0224/HTML/blob/main/output/gif03.gif" width="730">
+
+- 움직이는 애니메이션 만들기
+
+    <img src="https://github.com/vinca0224/HTML/blob/main/output/gif04.gif" width="730">
+
+- 주사위 1
+
+    <img src="https://github.com/vinca0224/HTML/blob/main/output/gif05.gif" width="730">
+
+- 주사위 2
+
+    <img src="https://github.com/vinca0224/HTML/blob/main/output/gif06.gif" width="730">
+
